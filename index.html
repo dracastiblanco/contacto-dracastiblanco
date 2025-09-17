@@ -1,149 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contacto | Dra. María Paula Castiblanco</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root {
-  --beige:#f7f3ee;
-  --gold:#d4af37;
-  --gold-dark:#b9922a;
-  --ink:#2b2b2b;
-  --white:#ffffff;
-}
-* { box-sizing: border-box; }
-body {
-  margin:0;
-  background: var(--beige);
-  color: var(--ink);
-  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
-.container {
-  min-height: 100svh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding: 32px 16px;
-}
-.card {
-  width: 100%;
-  max-width: 760px;
-  background: var(--white);
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.06);
-  border: 1px solid rgba(212,175,55,.25);
-}
-.brand {
-  text-align:center;
-  padding: 10px 10px 0;
-}
-.brand img {
-  max-width: 560px;
-  width: 85%;
-  height: auto;
-  display:block;
-  margin: 0 auto;
-}
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-size: clamp(28px, 4.2vw, 38px);
-  letter-spacing: .5px;
-  text-align:center;
-  margin: 18px 0 8px;
-}
-.sub {
-  text-align:center;
-  font-size: clamp(14px, 2.6vw, 16px);
-  opacity: .85;
-  margin-bottom: 22px;
-}
-.divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(212,175,55,.6), transparent);
-  margin: 18px 0 22px;
-}
-.actions {
-  display:grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
-@media (min-width: 560px) {
-  .actions { grid-template-columns: 1fr 1fr; }
-}
-.btn {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding: 16px 18px;
-  border-radius: 12px;
-  border:1px solid var(--gold);
-  text-decoration:none;
-  font-weight:600;
-  font-size: clamp(16px, 2.8vw, 18px);
-  letter-spacing:.2px;
-  transition: transform .08s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
-}
-.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(212,175,55,.25);}
-.btn span.icon { display:inline-block; line-height:0; }
-.btn-gold {
-  background: linear-gradient(135deg, #e3c76a, var(--gold));
-  color: var(--white);
-}
-.btn-gold:hover { background: linear-gradient(135deg, #f1da8b, var(--gold)); }
-.btn-outline {
-  background: transparent;
-  color: var(--ink);
-}
-.footer {
-  text-align:center;
-  font-size: 12px;
-  opacity:.7;
-  margin-top: 20px;
-}
-.badge {
-  position: absolute;
-  top: -22px;
-  right: 18px;
-  background: var(--beige);
-  color: var(--gold-dark);
-  padding: 6px 10px;
-  border: 1px solid rgba(212,175,55,.35);
-  border-radius: 999px;
-  font-size: 12px;
-  letter-spacing:.3px;
-}
-.hero-wrap { position: relative; }
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Dra. María Paula Castiblanco</title>
+<link rel="stylesheet" href="./assets/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
+<body class="watermark">
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="./index.html">
+      <img src="./assets/logo_mpc_primary.png" alt="Logo MPC">
+      <span>Dra. María Paula Castiblanco</span>
+    </a>
+    <nav class="menu">
+      <a href="./index.html">Inicio</a>
+      <a href="./sobre-mi.html">Sobre mí</a>
+      <a href="./procedimientos.html">Procedimientos</a>
+      <a href="./contacto.html">Contacto</a>
+      <a class="btn btn-primary" href="https://wa.me/573244749353?text=Hola%20Dra.%20Castiblanco%2C%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener">Agendar por WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container wrap">
+    <div>
+      <span class="badge">Sitio oficial</span>
+      <h1>Cirugía plástica con enfoque en seguridad, armonía y resultados naturales</h1>
+      <p>Atención personalizada para cada paciente con tecnología avanzada y protocolos seguros.</p>
+      <div class="form-actions">
+        <a class="btn btn-primary" href="https://wa.me/573244749353?text=Hola%20Dra.%20Castiblanco%2C%20quiero%20agendar%20una%20cita." target="_blank">Agendar por WhatsApp</a>
+        <a class="btn btn-outline" href="https://instagram.com/dracastiblanco" target="_blank">Instagram @dracastiblanco</a>
+      </div>
+    </div>
     <div class="card">
-      <div class="hero-wrap">
-        <div class="badge">Contacto oficial</div>
-        <div class="brand">
-          <img src="logo_mpc_primary.png" alt="Logo Dra. María Paula Castiblanco">
-        </div>
-      </div>
-      <h1>Agenda tu cita</h1>
-      <p class="sub">Elige una opción para comunicarte directamente con mi equipo.</p>
-      <div class="divider"></div>
-      <div class="actions">
-        <a class="btn btn-gold" href="https://wa.me/573244749353?text=Hola%20Dra.%20Castiblanco%2C%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener">
-          <span class="icon">💬</span> WhatsApp
-        </a>
-        <a class="btn btn-outline" href="https://instagram.com/dracastiblanco" target="_blank" rel="noopener">
-          <span class="icon">🌸</span> Instagram @dracastiblanco
-        </a>
-      </div>
-      <div class="footer">© Dra. María Paula Castiblanco — Cirugía plástica, reconstructiva y estética</div>
+      <h3 class="kicker">Protocolos</h3>
+      <p><strong>Evaluación integral</strong>, <strong>planeación quirúrgica</strong> y <strong>cuidado postoperatorio</strong> para una recuperación segura.</p>
+      <p class="small">*Consulta de valoración requerida. Resultados pueden variar en cada paciente.</p>
     </div>
   </div>
-</body>
-</html>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Áreas de especialidad</h2>
+    <div class="grid grid-3">
+      <div class="box"><h3>Lipoescultura</h3><p>Definición corporal con tecnologías como PAL, VASER y retracción cutánea.</p></div>
+      <div class="box"><h3>Mamoplastia</h3><p>Aumento, reducción y mastopexia con enfoque en proporción y naturalidad.</p></div>
+      <div class="box"><h3>Contorno corporal</h3><p>Abdominoplastia, lipectomía y manejo integral del postoperatorio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card">
+      <h2>Agenda tu cita</h2>
+      <p>Escríbenos por WhatsApp y con gusto te guiamos en el proceso de valoración.</p>
+      <a class="btn btn-primary" href="https://wa.me/573244749353?text=Hola%20Dra.%20Castiblanco%2C%20quiero%20agendar%20una%20cita." target="_blank">Contactar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    © Dra. María Paula Castiblanco · Cirugía plástica, reconstructiva y estética
+    <div class="links">
+      <a href="https://instagram.com/dracastiblanco" target="_blank" rel="noopener">Instagram</a>·
+      <a href="https://wa.me/573244749353?text=Hola%20Dra.%20Castiblanco%2C%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener">WhatsApp</a>·
+      <a href="mailto:contacto@dracastiblanco.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body></html>
